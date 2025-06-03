@@ -1,0 +1,475 @@
+/* Общие стили */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    color: #333;
+}
+
+/* Навигация */
+header {
+    background-color: #2c3e50;
+    padding: 1rem 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    gap: 2rem;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: #3498db;
+}
+
+/* Главная секция */
+.hero {
+    background: linear-gradient(rgba(44, 62, 80, 0.9), rgba(44, 62, 80, 0.9)),
+                url('../images/hero-bg.jpg') center/cover;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    padding: 0 1rem;
+}
+
+.hero h1 {
+    font-size: 4rem;
+    margin-bottom: 1rem;
+}
+
+.hero h2 {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+}
+
+/* Секция особенностей */
+.features {
+    padding: 5rem 2rem;
+    background-color: #f9f9f9;
+}
+
+.feature-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem 0;
+}
+
+.feature {
+    background: white;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.feature:hover {
+    transform: translateY(-5px);
+}
+
+.feature h3 {
+    color: #2c3e50;
+    margin-bottom: 1rem;
+}
+
+/* Подвал */
+footer {
+    background-color: #2c3e50;
+    color: white;
+    text-align: center;
+    padding: 2rem;
+    margin-top: 2rem;
+}
+
+/* Стили для страницы "О проекте" */
+.about-page {
+    padding-top: 80px;
+}
+
+.about-hero {
+    background: linear-gradient(rgba(44, 62, 80, 0.9), rgba(44, 62, 80, 0.9)),
+                url('../images/about-bg.jpg') center/cover;
+    padding: 4rem 2rem;
+    text-align: center;
+    color: white;
+}
+
+.about-hero h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.about-content {
+    padding: 4rem 2rem;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.about-content h2 {
+    color: #2c3e50;
+    margin: 2rem 0 1rem;
+    font-size: 2rem;
+}
+
+.about-content p {
+    margin-bottom: 1.5rem;
+    line-height: 1.8;
+}
+
+.about-content ul {
+    list-style-position: inside;
+    margin-bottom: 2rem;
+}
+
+.about-content li {
+    margin-bottom: 0.5rem;
+    line-height: 1.6;
+}
+
+/* Стили для страницы "Участники" */
+.team-page {
+    padding-top: 80px;
+}
+
+.team-hero {
+    background: linear-gradient(rgba(44, 62, 80, 0.9), rgba(44, 62, 80, 0.9)),
+                url('../images/team-bg.jpg') center/cover;
+    padding: 4rem 2rem;
+    text-align: center;
+    color: white;
+}
+
+.team-hero h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.team-hero p {
+    font-size: 1.2rem;
+}
+
+.team-content {
+    padding: 4rem 2rem;
+}
+
+.team-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.team-member {
+    background: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.team-member:hover {
+    transform: translateY(-5px);
+}
+
+.member-image {
+    width: 100%;
+    height: 300px;
+    overflow: hidden;
+}
+
+.member-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.team-member h3 {
+    color: #2c3e50;
+    margin: 1rem;
+    font-size: 1.5rem;
+}
+
+.team-member .role {
+    color: #3498db;
+    margin: 0 1rem;
+    font-weight: 500;
+}
+
+.team-member .contribution {
+    margin: 1rem;
+    color: #666;
+    line-height: 1.6;
+}
+
+/* Стили для страницы "Журнал" */
+.journal-page {
+    padding-top: 80px;
+}
+
+.journal-hero {
+    background: linear-gradient(rgba(44, 62, 80, 0.9), rgba(44, 62, 80, 0.9)),
+                url('../images/journal-bg.jpg') center/cover;
+    padding: 4rem 2rem;
+    text-align: center;
+    color: white;
+}
+
+.journal-hero h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.journal-hero p {
+    font-size: 1.2rem;
+}
+
+.journal-content {
+    padding: 4rem 2rem;
+}
+
+.journal-post {
+    background: white;
+    border-radius: 10px;
+    padding: 2rem;
+    margin-bottom: 3rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.post-date {
+    color: #3498db;
+    font-weight: 500;
+    margin-bottom: 1rem;
+}
+
+.journal-post h2 {
+    color: #2c3e50;
+    margin-bottom: 1.5rem;
+    font-size: 2rem;
+}
+
+.post-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-width: 800px;
+    margin: 1.5rem auto;
+    min-height: 300px;
+}
+
+.post-image img {
+    max-width: 100%;
+    max-height: 400px;
+    width: auto;
+    height: auto;
+    object-fit: contain;
+    display: block;
+}
+
+.journal-post p {
+    margin-bottom: 1.5rem;
+    line-height: 1.8;
+    color: #666;
+}
+
+.journal-post ul {
+    list-style-position: inside;
+    margin-bottom: 1.5rem;
+}
+
+.journal-post li {
+    margin-bottom: 0.5rem;
+    color: #666;
+}
+
+/* Стили для страницы "Ресурсы" */
+.resources-page {
+    padding-top: 80px;
+}
+
+.resources-hero {
+    background: linear-gradient(rgba(44, 62, 80, 0.9), rgba(44, 62, 80, 0.9)),
+                url('../images/resources-bg.jpg') center/cover;
+    padding: 4rem 2rem;
+    text-align: center;
+    color: white;
+}
+
+.resources-hero h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.resources-hero p {
+    font-size: 1.2rem;
+}
+
+.resources-content {
+    padding: 4rem 2rem;
+}
+
+.resources-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.resource-category {
+    background: white;
+    border-radius: 10px;
+    padding: 2rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.resource-category h2 {
+    color: #2c3e50;
+    margin-bottom: 1.5rem;
+    font-size: 1.8rem;
+}
+
+.resource-card {
+    background: #f8f9fa;
+    border-radius: 8px;
+    padding: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.resource-card:last-child {
+    margin-bottom: 0;
+}
+
+.resource-card h3 {
+    color: #3498db;
+    margin-bottom: 0.5rem;
+    font-size: 1.3rem;
+}
+
+.resource-card p {
+    color: #666;
+    margin-bottom: 1rem;
+    line-height: 1.6;
+}
+
+.resource-link {
+    display: inline-block;
+    background: #3498db;
+    color: white;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.resource-link:hover {
+    background: #2980b9;
+}
+
+/* Адаптивный дизайн */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+    }
+
+    .hero h1 {
+        font-size: 3rem;
+    }
+
+    .hero h2 {
+        font-size: 1.5rem;
+    }
+    
+    .about-hero h1 {
+        font-size: 2rem;
+    }
+    
+    .about-content {
+        padding: 2rem 1rem;
+    }
+    
+    .about-content h2 {
+        font-size: 1.5rem;
+    }
+    
+    .team-hero h1 {
+        font-size: 2rem;
+    }
+    
+    .team-content {
+        padding: 2rem 1rem;
+    }
+    
+    .team-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .journal-hero h1 {
+        font-size: 2rem;
+    }
+    
+    .journal-content {
+        padding: 2rem 1rem;
+    }
+    
+    .journal-post {
+        padding: 1.5rem;
+    }
+    
+    .post-image {
+        height: 250px;
+    }
+    
+    .journal-post h2 {
+        font-size: 1.5rem;
+    }
+    
+    .resources-hero h1 {
+        font-size: 2rem;
+    }
+    
+    .resources-content {
+        padding: 2rem 1rem;
+    }
+    
+    .resources-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .resource-category {
+        padding: 1.5rem;
+    }
+    
+    .resource-category h2 {
+        font-size: 1.5rem;
+    }
+} 
